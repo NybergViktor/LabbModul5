@@ -1,3 +1,4 @@
+
 import java.util.ArrayList;
 
 record Item(String name, String Genre) {
@@ -11,9 +12,7 @@ public class Books {
     private int arraynr = 0;
     Object bookList[] = new Object[10];
 
-    public ArrayList[] arrayBookList;
-
-    {
+    public ArrayList[] arrayBookList(){
         bookList[arraynr] = new Item("Hobbit", "Fantasy");
         bookList[arraynr += 1] = new Item("HarryPotter 1", "Fantasy");
         bookList[arraynr += 1] = new Item("HarryPotter 2", "Fantasy");

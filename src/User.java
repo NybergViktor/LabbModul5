@@ -2,20 +2,22 @@ import java.util.Scanner;
 
 public class User {
     Scanner myScanner = new Scanner(System.in);
+    Books books = new Books();
 
-    public void readListOfBooks(){
+    public void readListOfBooks() {
 
         //här ska metod för att läsa upp alla böcker
 
 
-        System.out.println("Vill du låna en bok? ja/nej");
-        String alt = myScanner.nextLine();
+        System.out.println("Vill du låna en bok? 1 = ja/ 2 = nej");
+        int alt = myScanner.nextInt();
 
         while (true) {
-            if (alt == "ja") {
-                borrowBook();
+            if (alt == 1) {
+
+                books.lentOutBooks();
                 break;
-            } else if (alt == "nej") {
+            } else if (alt == 2) {
                 break;
             } else {
                 System.out.println("svara med ja eller nej");

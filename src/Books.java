@@ -1,6 +1,6 @@
+
 import java.util.ArrayList;
 import java.util.Scanner;
-
 
 
 public class Books {
@@ -10,14 +10,10 @@ public class Books {
     ArrayList<String> bookLentOut = new ArrayList<String>();
 
 
-
-
     public void setBook() {
         System.out.println("what book");
         this.book = book;
         book.add(myScanner.nextLine());
-
-
 
 
     }
@@ -46,6 +42,7 @@ public class Books {
 
         return book;
     }
+
     public void lentOutBooks() {
         System.out.println("Vilken bok vill du låna?");
         getBook();
@@ -54,5 +51,18 @@ public class Books {
         getBook();
 
 
+   /* public ArrayList[] arrayBookList(){
+        bookList[arraynr] = new Item("Hobbit", "Fantasy");
+        bookList[arraynr += 1] = new Item("HarryPotter 1", "Fantasy");
+        bookList[arraynr += 1] = new Item("HarryPotter 2", "Fantasy");
+        bookList[arraynr += 1] = new Item("HarryPotter 3", "Fantasy");
+        bookList[arraynr += 1] = new Item("HarryPotter 4", "Fantasy");
+        bookList[arraynr += 1] = new Item("HarryPotter 5", "Fantasy");
+        bookList[arraynr += 1] = new Item("HarryPotter 6", "Fantasy");
+        bookList[arraynr += 1] = new Item("HarryPotter 7 del 1", "Fantasy");
+        bookList[arraynr += 1] = new Item("HarryPotter 7 del 2", "Fantasy");
+        bookList[arraynr += 1] = new Item("Solsidan", "Comedy");
+    }*/
     }
 }
+
